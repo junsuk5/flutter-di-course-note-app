@@ -3,7 +3,7 @@ import 'package:sqflite/sqflite.dart';
 
 @module
 abstract class AppModule {
-  
+
   @preResolve
   Future<Database> get db => openDatabase(
     'notes_db',
